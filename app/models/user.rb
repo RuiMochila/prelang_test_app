@@ -26,4 +26,5 @@ class User < ActiveRecord::Base
 
   validates_formatting_of :color, using: :hex_color
   validates_formatting_of :phone, using: :us_phone
+  validates_formatting_of :zip, using: :us_zip
 end
