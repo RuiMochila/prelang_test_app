@@ -24,4 +24,5 @@ class User < ActiveRecord::Base
   end
 
 
+  validates_formatting_of :color, using: :hex_color
 end
